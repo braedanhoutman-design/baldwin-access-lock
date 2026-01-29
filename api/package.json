@@ -1,33 +1,8 @@
 {
-  "name": "baldwin-access-lock",
-  "version": "1.0.0",
-  "description": "30-day access lock for Baldwin 2 course",
-  "scripts": {
-    "dev": "vercel dev"
-  }
+    "name": "baldwin-access-lock",
+    "version": "1.0.0",
+    "description": "30-day access lock for Baldwin 2 course",
+    "scripts": {
+          "dev": "vercel dev"
+    }
 }
-```
-
----
-
-## **Step 3: Connect GitHub to Vercel & Deploy**
-
-1. Go back to your Vercel dashboard
-2. Click "New Project"
-3. Click "Import Git Repository"
-4. Search for `baldwin-access-lock` and click it
-5. Click "Import"
-6. Under "Environment Variables", add:
-   - **Name:** `SQUARESPACE_API_KEY`
-   - **Value:** `a7bf3aaa-52ee-40fa-b7d0-3d96b4b217eb`
-7. Click "Deploy"
-
-**Done!** Vercel will give you a URL like: `https://baldwin-access-lock.vercel.app`
-
----
-
-## **Step 4: Test Your Backend**
-
-Once deployed, test it by visiting:
-```
-https://YOUR-PROJECT-NAME.vercel.app/api/checkAccess?email=youremail@example.com
